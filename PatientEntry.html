@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Patient Entry</title>
+        <link rel="stylesheet" href="patiententry.css">
+    </head>
+
+    <body>
+        <div class="box1">
+        <label>Enter Patient Name:</label>
+        <input id="text" type="text" placeholder="Patient Name">
+        <br>
+        <label>Type of dicises:</label>
+        <input id="text" type="text" placeholder="Enter dicises">
+        <br>
+       <label> Patient Place:</label>
+        <input id="text" type="text" placeholder="Patient place">
+         <br>
+         <label>Patient aadhar.No:</label>
+         <input id="text" type="text" placeholder="Patient aadhar">
+         <br>
+         <label>any mobile.no</label>
+         <input id="text" type="text" placeholder="any mobile.no">
+         <br>
+         <button class="btn" onclick="showalert()">Submit</button>
+        </div>
+
+        <script>
+           function showalert(){
+               var check=document.getElementById("text").value;
+               if(check==""){
+                 alert("Please fill detail ssorry !!!")
+               }else{
+                var mytxt="your details are submitted sucessfully";
+               alert(mytxt);
+               }
+               
+           }
+           
+        </script>
+        </body>
+</html>
